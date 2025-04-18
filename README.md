@@ -1,4 +1,4 @@
-# 🔥 OceanHeatMLFlow | Geospatial Machine Learning for Seafloor Heat Flux Prediction  
+# 🫠 OceanHeatMLFlow | Geospatial Machine Learning for Seafloor Heat Flux Prediction  
 *Predicting oceanic heat flow using sediment thickness and spatial ML with SVR - Deployed via FastAPI*  
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python) ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.3-red) ![FastAPI](https://img.shields.io/badge/FastAPI-0.98-009688?logo=fastapi) ![GeoPandas](https://img.shields.io/badge/GeoPandas-0.13-green) ![PyTorch](https://img.shields.io/badge/PyTorch-2.0-EE4C2C?logo=pytorch)
@@ -19,7 +19,7 @@ Develop a **spatially-optimized SVR model** to predict seafloor heat flux (mW/m�
 ✅ **Production-Ready**: FastAPI endpoint with Pydantic validation (as in your IU Digital courses)  
 
 ## 🏗️ **Technical Architecture**  
-![System Architecture](./images/arquitectura.png)  
+![System Architecture](https://github.com/gacuervol/Geospatial-HeatFlow-ML/blob/main/docs/deployment/images/arquitectura.png)  
 *End-to-end pipeline from geospatial data to predictions*  
 
 ## 🛠️ **Core Stack**  
@@ -66,11 +66,11 @@ cv = KFold(n_splits=5)  # Spatial blocks
 | R²              | -0.0007          | 0.0119    | -           |  
 
 ### 2. Spatial Error Distribution  
-![Block CV](./images/BlockCV.png)  
+![Block CV](https://github.com/gacuervol/Geospatial-HeatFlow-ML/blob/main/docs/modeling/images/BlockCV.png)  
 *Optimal block size determination (76°)*  
 
 ### 3. Prediction Visualization  
-![SVR Results](./images/SVR.png)  
+![SVR Results](https://github.com/gacuervol/Geospatial-HeatFlow-ML/blob/main/docs/modeling/images/SVR.png)  
 *Actual vs Predicted heat flux with spatial features*  
 
 ## 🚀 **Deployment Guide**  
@@ -95,16 +95,33 @@ print(response.json())  # {'heatflow': 85.09}
 - **Feature Engineering**: 7 spatial predictors capturing sediment-heatflow dynamics  
 - **Productionization**: FastAPI deployment with Intel Xe GPU optimization  
 
-## 🌎 **Applications**  
-- **Climate Research**: Quantifying ocean-lithosphere heat exchange (ties to your PhD)  
-- **Resource Exploration**: Identifying hydrothermal vent potentials  
-- **Education**: Demo for computational oceanography courses (like your UdeA teaching)  
+## 📜 References
+```bibtex
+@dataset{IHFC2023,
+  title = {The Global Heat Flow Database: Update 2023},
+  author = {Fuchs, Sven and International Heat Flow Commission},
+  year = {2023},
+  publisher = {GFZ Data Services},
+  doi = {10.5880/fidgeo.2023.008},
+  note = {Primary heatflow data (33,103 marine records)}
+}
 
-## 🔗 **Connect**  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Geospatial_Data_Scientist-0077B5?logo=linkedin)](https://www.linkedin.com/in/yourprofile)  
-[![ResearchGate](https://img.shields.io/badge/ResearchGate-Publications-00CCBB?logo=researchgate)](https://www.researchgate.net/profile/yourprofile)  
-
-> 🔥 **Research Collaboration Opportunities**:  
-> - Extending to GNNs for 3D heatflow modeling (leveraging your PyTorch expertise)  
-> - Integration with OceanParcels for dynamic systems (building on your SENALMAR work)
+@article{GlobSed2019,
+  title = {GlobSed: Total Sediment Thickness of the World's Oceans},
+  author = {Straume, E.O. and Gaina, C. and Medvedev, S.},
+  journal = {Geochemistry, Geophysics, Geosystems},
+  year = {2019},
+  volume = {20},
+  doi = {10.1029/2018GC008115},
+  note = {5-arcmin global sediment grid}
+}
 ```
+## 🔗 **Connect**  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Geospatial_Data_Scientist-0077B5?logo=linkedin)](https://www.linkedin.com/in/giovanny-alejandro-cuervo-londo%C3%B1o-b446ab23b/)
+[![ResearchGate](https://img.shields.io/badge/ResearchGate-Publications-00CCBB?logo=researchgate)](https://www.researchgate.net/profile/Giovanny-Cuervo-Londono)  
+[![Email](https://img.shields.io/badge/Email-giovanny.cuervo101%40alu.ulpgc.es-D14836?style=for-the-badge&logo=gmail)](mailto:giovanny.cuervo101@alu.ulpgc.es)  
+
+> 🌴 **Research Opportunities**:  
+> - Open to coastal geomorphology collaborations  
+> - Available for geospatial Big Data projects  
+> - Contact via LinkedIn for consulting  
