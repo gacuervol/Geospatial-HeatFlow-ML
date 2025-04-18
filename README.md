@@ -73,6 +73,97 @@ cv = KFold(n_splits=5)  # Spatial blocks
 ![SVR Results](https://github.com/gacuervol/Geospatial-HeatFlow-ML/blob/main/docs/modeling/images/SVR.png)  
 *Actual vs Predicted heat flux with spatial features*  
 
+## 📂 Repository Structure  
+```text
+/docs
+├── /acceptance
+│   └── exit_report.md
+├── /business_understanding
+│   ├── /images
+│   │   ├── Cronograma.png
+│   │   ├── HeatFlow_map.png
+│   │   └── sedthick_map.png
+│   └── project_charter.md
+├── /data
+│   ├── data_definition.md
+│   ├── data_dictionary.md
+│   ├── data_summary.md
+│   └── /images
+│       ├── barplot_tecto.png
+│       ├── boxplot_ano.png
+│       ├── box_plot.png
+│       ├── extrac_sedthick.png
+│       ├── frec_ano.png
+│       ├── hist.png
+│       ├── Mapa_q.png
+│       ├── Mapa_sedthick.png
+│       ├── mat_corr_q_tras_vs_sed_tras.png
+│       ├── matriz_corr_var.png
+│       ├── pair_plot.png
+│       ├── q_vs_sedthick.png
+│       └── reg_q_tras_vs_sed_tras.png
+├── /deployment
+│   ├── deploymentdoc.md
+│   └── /images
+│       └── arquitectura.png
+└── /modeling
+    ├── baseline_models.md
+    ├── /images
+    │   ├── baseline.png
+    │   ├── BlockCV.png
+    │   └── SVR.png
+    └── model_report.md
+pyproject.toml
+README.md
+/scripts
+├── /data_acquisition
+│   └── get_data.py
+├── /eda
+│   ├── eda.ipynb
+│   └── main.py
+├── /evaluation
+│   └── main.py
+├── /preprocessing
+│   ├── main.py
+│   └── preproces.ipynb
+└── /training
+    ├── feature_extraction.ipynb
+    ├── main.py
+    └── modelling.ipynb
+/src
+└── /nombre_paquete
+    ├── /database
+    │   ├── data_loader.py
+    │   ├── db12_features.csv.dvc
+    │   ├── db12_prep_eda.csv.dvc
+    │   ├── db12_trans.csv.dvc
+    │   ├── IHFC_2023_GHFDB.csv
+    │   ├── IHFC_2023_GHFDB_pre.csv.dvc
+    │   └── __init__.py
+    ├── /deployment
+    │   ├── API_test.py
+    │   ├── deploymentAPIs.py
+    │   ├── mensaje.html
+    │   └── model.joblib
+    ├── /evaluation
+    │   ├── eval_loader.py
+    │   └── __init__.py
+    ├── __init__.py
+    ├── /models
+    │   ├── __init__.py
+    │   ├── model.joblib
+    │   ├── model_loader.py
+    │   └── model_search.py
+    ├── /preprocessing
+    │   └── __init__.py
+    ├── /training
+    │   └── __init__.py
+    └── /visualization
+        ├── cartopy_feature_download.py
+        ├── __init__.py
+        └── plotting.py
+```
+
 ## 🚀 **Deployment Guide**  
 ### FastAPI Local Setup  
 ```bash
